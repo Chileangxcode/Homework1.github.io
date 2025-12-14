@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #4f46e5;
+  --dark: #111827;
+  --gray: #6b7280;
+  --light: #f9fafb;
+  --white: #ffffff;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* Header */
+.header {
+  width: 100%;
+  padding: 15px 120px;
+  background: var(--white);
+  box-shadow: 0 4px 10px rgba(90, 88, 88, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo h3 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--primary);
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--gray);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: var(--primary);
+}
+
+.menu .contact {
+  background: var(--primary);
+  color: var(--white);
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+.menu .contact:hover {
+  background: #4338ca;
+  color: white;
+}
+
+/* Main */
+main {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.box {
+  width: 55%;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+}
+
+.box h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.box p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--gray);
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+  text-align: right;
+}
+
+.btn button {
+  padding: 12px 28px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn button:hover {
+  background: #4338ca;
+  transform: scale(1.05);
+}
+
+/* Special boxes */
+.uxuiDesign {
+  background: var(--dark);
+  color: white;
+}
+
+.uxuiDesign p {
+  color: #d1d5db;
+}
+
+.graphicDesign {
+  background: #1f2933;
+  color: white;
+}
+
+.graphicDesign p {
+  color: #d1d5db;
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: var(--white);
+  padding: 30px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
